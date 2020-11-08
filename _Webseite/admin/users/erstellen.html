@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/be49268188.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Candal|Lora&display=swap" rel="stylesheet"> 
+  <!-- Style -->
+  <link rel="stylesheet" href="../../css/style.css">
+	<!-- Admin Style -->
+	<link rel="stylesheet" href="../../css/admin.css"> 
+  <title>Admin - Add User</title>
+</head>
+
+
+<body>
+
+	<header>
+		<div class="logo">
+			<a href="../../Webseite_PHP_Blog.html"><h1 class="logo-text"><span>Blog</span>Titel</h1></a>
+		</div>	
+		<i class="fa fa-bars menu-toggle"></i>
+		<ul class="nav">
+			<li>
+				<a href="#">
+					<i class="fa fa-user"></i>
+					<i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+				Darleen & Alessa</a>
+		
+					
+				<ul>
+				
+					
+					<li><a href="#" class="logout">Logout</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+	</header>
+	<!-- START ADMIN Inhalte unserer Webseite -->
+	<div class="admin-wrapper">
+	
+			<!-- LEFT SIDEBAR-->
+				<div class="left-sidebar">
+					<ul>
+					<li><a href="../posts/index.html">Manage Posts</a></li>
+					<li><a href="index.html">Manage Users</a></li>
+					<li><a href="../topics/index.html">Manage Topics</a></li>
+					
+					</ul>
+				</div>	
+			<!-- LEFT SIDEBAR-->
+			<!-- ADMIN INHALT-->
+				<div class="admin-inhalt">
+					<div class="btn-gruppe">
+					<a href="erstellen.html" class="btn btn-big">Add User</a>
+					<a href="index.html" class="btn btn-big">Manage Users</a>
+					</div>
+					
+					<div class="inhalt">
+						<h2 class="seiten-titel">Add User</h2>
+						
+						<form action="erstellen.html" method="post">
+							<div>
+								<label> Benutzername </label>
+								<input type="text" name="benutzername" class="text-eingabe">
+							</div>
+							<div>
+								<label> E-Mail </label>
+								<input type="text" name="email" class="text-eingabe">
+							</div>
+							<div>
+								<label> Passwort </label>
+								<input type="password" name="passwort" class="text-eingabe">
+							</div>
+							<div>
+								<label> Passwort bestätigen</label>
+								<input type="password" name="passwortbest" class="text-eingabe">
+							</div>
+							<div>
+								<label>Rolle</label>
+								<select name="topic" class="text-eingabe">
+									<option value="Autor">Autor</option>
+									<option value="Admin">Admin</option>
+								</select>
+							</div>
+	
+						
+							<div>
+								<button type="submit" class="btn btn-big">Add User</button>
+							</div>
+						
+						</form>
+						
+					</div>
+				</div>
+			<!-- ENDE ADMIN INHALT-->
+	</div>
+	<!-- ENDE ADMIN Inhalte unserer Webseite -->
+		
+
+	<!-- JQuerry -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<!-- CKEditor -->
+	<script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js"></script>
+	<!-- Unser custom JavaScript Code -->
+	<script src="../../js/scripts.js"></script>
+</body>
+</html>  
